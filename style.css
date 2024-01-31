@@ -6,6 +6,11 @@
   --color-nav: #ffa500;
   --color-navbar: #ff1493;
   --nav-barhoover: rgb(51, 46, 46);
+  --color-grey: grey;
+  --menushadow: rgba(172, 165, 165, 0.5);
+  --experience-card-color: #ede0e0;
+  --bluecolor:blue;
+  --footercolor:  #191919;
 }
 
 * {
@@ -25,7 +30,7 @@ body {
 }
 
 header {
-  color: white;
+  color: var(--color-white);
 }
 
 #header {
@@ -76,7 +81,7 @@ header {
 }
 
 header .nav-bar ul li a:hover {
-  color: grey;
+  color: var(--color-grey);
 }
 
 .hamburger-menu {
@@ -94,10 +99,10 @@ header .nav-bar ul li a:hover {
 #menu {
   width: 15%;
   height: 30px;
-  color: black;
+  color: var(--color-black);
   font-weight: bold;
   border-radius: 5px;
-  box-shadow: rgba(172, 165, 165, 0.5);
+  box-shadow: var(--menushadow);
   font-size: 16px;
   text-align: center;
   cursor: pointer;
@@ -230,14 +235,13 @@ header .nav-bar ul li a:hover {
   margin: 20px 15px;
   border-radius: 50%;
   background: radial-gradient(rgba(0, 0, 0, 0.15) 60%, transparent 0),
-    radial-gradient(#000 67%, transparent 0),
-    linear-gradient(to top right, #ffa500 0%, #ff1493 100%);
+    radial-gradient(var(--color-black) 67%, transparent 0),
+    linear-gradient(to top right, var(--color-nav) 0%, var(--color-navbar) 100%);
 }
 
 .profile-photo {
   display: flex;
   width: 100%;
-  height: auto;
   border-radius: 50%;
   position: relative;
   align-items: center;
@@ -310,7 +314,7 @@ header .nav-bar ul li a:hover {
   display: inline-block;
   width: fit-content;
   border-radius: 4px;
-  background-color: #ff1493;
+  background-color: var(--color-navbar);
   color: var(--color-black);
 }
 
@@ -327,9 +331,9 @@ header .nav-bar ul li a:hover {
 }
 
 .experience-card {
-  background-color: #ede0e0;
+  background-color: var(--experience-card-color);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(172, 165, 165, 0.5);
+  box-shadow: 0 4px 8px var(--menushadow);
   padding: 20px;
   margin: 20px auto;
   max-width: 250px;
@@ -350,17 +354,17 @@ header .nav-bar ul li a:hover {
 .experience-card h2 {
   display: flex;
   align-items: center;
-  color: black;
+  color: var(--color-black);
 }
 
 .experience-card p {
   margin-top: 10px;
-  color: black;
+  color: var(--color-black);
   text-align: justify;
 }
 
 #experience h1 {
-  color: white;
+  color: var(--color-white);
   margin-bottom: 20px;
   margin-top: 7em;
   font-size: 18px;
@@ -396,7 +400,7 @@ header .nav-bar ul li a:hover {
 #projects ul li a {
   text-decoration: none;
   font-size: 18px;
-  color: blue;
+  color: var(--color-navbar);
 }
 
 h5 {
@@ -404,14 +408,14 @@ h5 {
   flex-direction: row;
   font-size: 18px;
   margin-top: 100px;
-  color: white;
+  color: var(--color-white);
 }
 
 .contact-info {
-  font-size: 1em;
+  font-size: 1.5em;
   padding: 1em;
   margin: auto;
-  color: white;
+  color: var(--color-white);
   display: flex;
   flex-direction: column;
 }
@@ -423,7 +427,7 @@ h5 {
   align-items: center;
   justify-content: center;
   margin-top: auto;
-  background: #191919;
+  background: var(--footercolor);
   position: 0;
 }
 
